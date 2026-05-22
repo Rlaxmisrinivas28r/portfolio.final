@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Laxmi Srinivas | Java Specialist & Software Engineer</title>
+    <meta name="description" content="Portfolio of R Laxmi Srinivas, a Software Engineer specialized in Java, SQL, backend systems, and cloud computing. Explore advanced projects including Smart Expense Analyzer and SecureVault.">
+    <meta name="keywords" content="R Laxmi Srinivas, Laxmi Srinivas, Software Engineer, Java Developer, Backend Developer, Bengaluru, India, Portfolio, Three.js, Glassmorphism">
+    <meta name="author" content="R Laxmi Srinivas">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="R Laxmi Srinivas | Java Specialist & Software Engineer">
+    <meta property="og:description" content="Creative developer portfolio of R Laxmi Srinivas showcasing 3D experiences, Java engineering, SQL security database design, and cloud deployments.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans for body & Outfit for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Core Style Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Custom Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>R Laxmi Srinivas<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav">Hire Me</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-glow">
+                        <span class="badge-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">R Laxmi Srinivas</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A Software Engineer based in Bengaluru, India. I specialize in building highly scalable Java architectures, robust backend database models, and visually premium user interfaces.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Talk</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-glow-ring">
+                        <div class="avatar-card">
+                            <div class="avatar-inner">
+                                <i class="fa-solid fa-code avatar-icon"></i>
+                                <div class="floating-tech tech-java">
+                                    <i class="fa-brands fa-java"></i>
+                                </div>
+                                <div class="floating-tech tech-js">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <div class="floating-tech tech-database">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-mouse" aria-label="Scroll Down">
+                    <span class="scroll-wheel"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card intro-card">
+                        <h3 class="card-title"><i class="fa-solid fa-user-tie icon-accent"></i> Profile</h3>
+                        <p class="card-desc">
+                            Motivated and detail-oriented Computer Science and Engineering student at **Jain University**, pursuing a Bachelor of Technology. I am highly passionate about Java backend engineering, clean code structures, and object-oriented systems design. 
+                        </p>
+                        <p class="card-desc">
+                            With hands-on experience developing advanced applications in Java, JDBC, and SQL Server, I bridge the gap between secure data storage and dynamic, user-friendly interactive frontends.
+                        </p>
+                        <div class="contact-quick-info">
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Bengaluru, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:srinivas28r@gmail.com">srinivas28r@gmail.com</a>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+919008592807">+91 9008592807</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card education-card">
+                        <h3 class="card-title"><i class="fa-solid fa-graduation-cap icon-accent"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">July 2023 – July 2027</div>
+                                <h4 class="timeline-title">Bachelor of Technology - CSE</h4>
+                                <p class="timeline-org">Jain University, Bengaluru</p>
+                                <span class="score-badge">CGPA: 8.0</span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">April 2021 – April 2023</div>
+                                <h4 class="timeline-title">XII (State Board)</h4>
+                                <p class="timeline-org">Aditya PU College, Bengaluru</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">April 2020 – April 2021</div>
+                                <h4 class="timeline-title">X (State Board)</h4>
+                                <p class="timeline-org">Bengaluru, Karnataka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Capabilities</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-icon-wrapper">
+                            <i class="fa-solid fa-language category-icon"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>C / C#</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend & Databases -->
+                    <div class="skill-category-card">
+                        <div class="category-icon-wrapper">
+                            <i class="fa-solid fa-gears category-icon"></i>
+                        </div>
+                        <h3>Backend & Databases</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>JDBC & SQL Server</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 88%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>OOP Core Concepts</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>REST API / MVC Architecture</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Database Design & Schema Modeling</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Cloud -->
+                    <div class="skill-category-card">
+                        <div class="category-icon-wrapper">
+                            <i class="fa-solid fa-cloud-arrow-up category-icon"></i>
+                        </div>
+                        <h3>Cloud, DevOps & Tools</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Microsoft Azure (Fundamentals)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Azure DevOps (CI/CD Basics)</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 65%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub Workflow</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code & Eclipse</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Web Tech Tag Cloud -->
+                <div class="skills-tag-cloud">
+                    <div class="tag-title">Web Technologies & Core Concepts</div>
+                    <div class="tags-container">
+                        <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tag"><i class="fa-brands fa-js"></i> ES6 JavaScript</span>
+                        <span class="tag"><i class="fa-solid fa-cubes"></i> Data Structures</span>
+                        <span class="tag"><i class="fa-solid fa-diagram-project"></i> SDLC</span>
+                        <span class="tag"><i class="fa-solid fa-bug-slash"></i> Debugging</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Creative Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Smart Expense Analyzer -->
+                    <article class="project-card-3d" data-tilt>
+                        <div class="project-image-placeholder prj-expense">
+                            <div class="project-overlay-glow"></div>
+                            <i class="fa-solid fa-chart-line project-placeholder-icon"></i>
+                            <div class="tech-labels">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">JavaFX</span>
+                                <span class="tech-pill">SQL Server</span>
+                                <span class="tech-pill">Analytics</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Smart Expense Analyzer <span class="status-badge">Advanced</span></h3>
+                            <p class="project-desc">
+                                A highly interactive, intelligent financial analysis program designed to track spending habits, forecast cash flows, and generate monthly summaries.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Implemented predictive algorithms using historic data to estimate future expenses.</li>
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Designed a visual dashboard in JavaFX showing customizable monthly spends and trend breakdowns.</li>
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Configured structured SQL Server databases to execute queries under 10ms.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="#" class="btn btn-project-link disabled">
+                                    <i class="fa-solid fa-circle-play"></i> Demo Unavailable
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: SecureVault -->
+                    <article class="project-card-3d" data-tilt>
+                        <div class="project-image-placeholder prj-vault">
+                            <div class="project-overlay-glow"></div>
+                            <i class="fa-solid fa-shield-halved project-placeholder-icon"></i>
+                            <div class="tech-labels">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">JDBC</span>
+                                <span class="tech-pill">SQL Server</span>
+                                <span class="tech-pill">Cryptography</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">SecureVault: Role-Based File System</h3>
+                            <p class="project-desc">
+                                A robust, enterprise-grade file management solution integrated with secure database operations, structured authentication, and logs.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Developed standard Role-Based Access Control (RBAC) to enforce security partitions.</li>
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Implemented industry-standard encryption for sensitive datasets prior to storage.</li>
+                                <li><i class="fa-solid fa-circle-check feature-icon"></i> Formulated comprehensive audit log processes tracking database activity.</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-project-link">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="#" class="btn btn-project-link disabled">
+                                    <i class="fa-solid fa-circle-play"></i> Demo Unavailable
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & ACHIEVEMENTS SECTION -->
+        <section id="experience" class="section exp-cert-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Journey & Milestones</span>
+                    <h2 class="section-title">Experience & Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="exp-cert-grid">
+                    <!-- Internship Timeline -->
+                    <div class="exp-column">
+                        <h3 class="grid-subheading"><i class="fa-solid fa-briefcase icon-accent"></i> Professional Experience</h3>
+                        
+                        <div class="experience-timeline">
+                            <div class="exp-item">
+                                <div class="exp-card">
+                                    <div class="exp-header">
+                                        <div class="exp-org-icon">
+                                            <i class="fa-solid fa-laptop-code"></i>
+                                        </div>
+                                        <div class="exp-meta">
+                                            <span class="exp-date">Feb 2025 - July 2025</span>
+                                            <h4 class="exp-role">Software Engineering Intern</h4>
+                                            <h5 class="exp-org">Motion Cut</h5>
+                                        </div>
+                                    </div>
+                                    <p class="exp-description">
+                                        Developed and optimized custom software applications utilizing Java, SQL, HTML, CSS, and JavaScript. Focused on increasing backend database modular integration, scalability, and execution performance. 
+                                    </p>
+                                    <ul class="exp-bullets">
+                                        <li>Optimized and debugged application modules to improve execution speed and maintainability.</li>
+                                        <li>Leveraged Git and GitHub workflows to coordinate edits and participate in structured code reviews.</li>
+                                        <li>Analyzed system specifications to construct efficient SQL databases aligning with back-end models.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements & Certifications -->
+                    <div class="cert-column">
+                        <h3 class="grid-subheading"><i class="fa-solid fa-award icon-accent"></i> Certifications & Credentials</h3>
+                        
+                        <div class="certificates-list">
+                            <div class="cert-card">
+                                <div class="cert-icon-box">
+                                    <i class="fa-brands fa-java cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4 class="cert-name">Java Backend Development</h4>
+                                    <p class="cert-issuer">J Spiders | <span class="cert-status">Pursuing (December 2025)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon-box">
+                                    <i class="fa-solid fa-cloud cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4 class="cert-name">Microsoft Azure Fundamentals</h4>
+                                    <p class="cert-issuer">Coursera | <span class="cert-date">April 2026</span></p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon-box">
+                                    <i class="fa-solid fa-circle-check cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4 class="cert-name">Programming using Java</h4>
+                                    <p class="cert-issuer">Infosys | <span class="cert-date">June 2025</span></p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon-box">
+                                    <i class="fa-solid fa-clock cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4 class="cert-name">Time Management Mastery</h4>
+                                    <p class="cert-issuer">Infosys | <span class="cert-date">June 2025</span></p>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon-box">
+                                    <i class="fa-solid fa-square-envelope cert-icon"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4 class="cert-name">Java Development Recommendation</h4>
+                                    <p class="cert-issuer">Main Crafts Technology | <span class="cert-date">April 2026</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Details -->
+                    <div class="contact-details-box">
+                        <h3 class="contact-heading">Let's build something beautiful together</h3>
+                        <p class="contact-desc-text">
+                            Have an exciting project idea, internship, or full-time opportunity? Or just want to say hi? Feel free to drop a message, and I'll get back to you within 24 hours.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Call Me</span>
+                                    <a href="tel:+919008592807">+91 9008592807</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Email Me</span>
+                                    <a href="mailto:srinivas28r@gmail.com">srinivas28r@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Location</span>
+                                    <p>Bengaluru, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-networks">
+                            <span class="social-label">Follow / Connect:</span>
+                            <div class="social-icons">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-box">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group floating-group">
+                                    <input type="text" id="form-name" required placeholder=" ">
+                                    <label for="form-name">Full Name</label>
+                                    <span class="input-focus-bar"></span>
+                                </div>
+                                <div class="form-group floating-group">
+                                    <input type="email" id="form-email" required placeholder=" ">
+                                    <label for="form-email">Email Address</label>
+                                    <span class="input-focus-bar"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group floating-group">
+                                <input type="text" id="form-subject" required placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                                <span class="input-focus-bar"></span>
+                            </div>
+
+                            <div class="form-group floating-group">
+                                <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                                <label for="form-message">Your Message</label>
+                                <span class="input-focus-bar"></span>
+                            </div>
+
+                            <button type="submit" id="form-submit-btn" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-feedback-msg" class="feedback-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-area">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 R Laxmi Srinivas. Designed with passion.</p>
+            <div class="footer-meta">
+                <span>3D Graphics powered by Three.js</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="three-bg.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
